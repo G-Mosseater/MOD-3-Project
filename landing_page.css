@@ -2,7 +2,6 @@ body{
     background-attachment:fixed ;
     background-image:url("./img/background\ page\ 1.svg");
     background-size: cover;
-    background-blend-mode:soft-light;
 }
 
 h1 {
@@ -15,9 +14,7 @@ h2 {
     padding-left: 25px;
 
 }
-h3 {
-    
-}
+
 .support {
     width: 70%;
     padding: 20px;
@@ -79,5 +76,6 @@ ul {
         padding: 20px;
         padding-left: 0px;
         margin: 20px;
+
     }
   }
