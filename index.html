@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="landing_page.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,51 +20,40 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="nav_container">
-        <div class="nav_menu">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a href="#Home" class="nav_link">
-                <i class="bx bx-home nav_icon"></i>
-                <span class="nav_name">Home</span>
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#Rooms" class="nav_link">
-                <i class="bx bx-message-rounded-dots nav_icon"></i>
-                <span class="nav_name">Rooms</span>
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#Events" class="nav_link">
-                <i class="bx bx-calendar-event nav_icon"></i>
-                <span class="nav_name">Events</span>
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#Profile" class="nav_link">
-                <i class="bx bx-user nav_icon"></i>
-                <span class="nav_name">Profile</span>
-              </a>
-            </li>
+    <main>
+<div class="titles">
+      <h1>Welcome,</h1>
+      <h2> Here is what is happening</h2></div>
+      <section class="events_container">
+        <div class="event">
+          <ul class="event1_list">
+            <h4>Event: Borgarbókasafn söngstund</h4>
+            <li><b>Time:</b> 10:00-11:00</li>
+            <li><b>Date:</b> 04/10</li>
+            <li><b>Cost:</b> Free</li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="feed section_height" id="Home">
-        <h2 class="section_title">Your Feed</h2>
+        <div class="event">
+          <h4>Activity in Mom chatroom</h4>
+        </div>
+        <div class="event">
+          <h4>We found a new event in Vesturbærinn 107:</h4>
+          <p>Samfélagshúsið</p>
+        </div>
+        <div class="event">
+          <h4>A meetup was created in single parents group </h4> 
+        </div>
+        <div class="event">
+          <ul class="event5_list">
+            <h4>Event: Borgarbókasafn söngstund</h4>
+            <li><strong>Time:</strong> 10:00-11:00</li>
+            <li><strong>Date:</strong> 04/10</li>
+            <li><strong>Cost:</strong> Free</li>
+          </ul>
+        </div>
+
       </section>
-      <section class="events section_height" id="Events">
-        <h2 class="section_title">Events</h2>
-      </section>
-      <section class="events section_height" id="Rooms">
-        <h2 class="section_title">Chat Rooms</h2>
-      </section>
-      <section class="events section_height" id="Profile">
-        <h2 class="section_title">Profile</h2>
-      </section>
+   
     </main>
 
     <script src="main.js"></script>

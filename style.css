@@ -1,0 +1,17 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+    body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #fffafa;
+    color: #201e50;
+    height: 100vh;
+    }
+    a {
+    text-decoration: none;
+    }
+   
+
+   
