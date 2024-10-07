@@ -42,18 +42,11 @@ color: aliceblue;
 
 
 /*  media queries */
-@media (max-width: 800px) {
-    /*between 0 and 800px*/
-  
-  }
   @media (min-width: 800px) {
     /*from 800px*/
   
     .titles {
       text-align: center;
-    }
-    .events_container {
-       
     }
 
   }
