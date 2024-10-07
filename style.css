@@ -1,17 +1,108 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-}
-    body {
-    font-family: "Quicksand", sans-serif;
-    background-color: #fffafa;
-    color: #201e50;
-    height: 100vh;
-    }
-    a {
-    text-decoration: none;
-    }
-   
+    /* Using classic CSS to keep the code more structured and readable */
 
-   
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: #fffafa;
+        color: #201e50;
+        }
+    
+        body {
+        height: 100vh;
+        }
+        a {
+        text-decoration: none;
+        }
+        .nav_link {
+        color: black;
+        text-decoration: none;
+        }
+    
+        ul {
+        list-style: none;
+        }
+    
+        header {
+        top: 0;
+        left: 100px;
+        width: 100%;
+        z-index: 100;
+        transition: all 0.5s ease;
+        }
+    
+    
+        @media screen and (max-width: 800px) {
+        .nav_menu {
+            background-color: #f3f4f6;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        span {
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .nav_icon {
+            font-size: 25px;
+            transition: all 0.5s ease;
+        }
+        }
+    
+        @media screen and (max-width: 300px) {
+        .nav_name {
+            display: none;
+        }
+        .nav_icon {
+            font-size: 25px;
+        }
+        }
+    
+        @media screen and (min-width: 700px) {
+        .nav_list {
+            padding: 0 60px;
+        }
+    
+        .nav_icon {
+            font-size: 35px;
+        }
+        span {
+            font-size: 15px;
+        }
+        }
+    
+        .nav_list,
+        .nav_link {
+        display: flex;
+       
+        }
+    
+        .nav_link {
+        flex-direction: column;
+        align-items: center;
+        }
+    
+        .nav_list {
+        justify-content: space-around;
+        }
+    
+    
+    
+        .section_title {
+            text-align: center;
+        }
+    
+        .section_height{
+            height: 100vh;
+        }
+    
+     .nav_container {
+        padding-bottom: 30px;
+       
+     }
+
+
+     
