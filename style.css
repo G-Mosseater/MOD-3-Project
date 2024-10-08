@@ -13,9 +13,21 @@ body {
     font-family: "Quicksand", sans-serif;
     }
 
+h1 {
+    font-size: 48px;
+}
+
 a {
     text-decoration: none;
     }
+
+nav a:active {
+    color:#FEB930;
+    }
+
+nav a:visited {
+        color: #f1f1f1;;
+        }
 
 .nav_link {
     color: black;
