@@ -20,13 +20,6 @@ a {
 a:visited {
     color: #f1f1f1;
 }
-.support {
-    width: 70%;
-    padding: 20px;
-    padding-left: 50px;
-    margin: 60px;
-    margin-left: 80px;
-}
 
 .events_container {
  padding-top: 20px;
@@ -61,5 +54,9 @@ ul {
     h1 {
         display: block;
       margin-top: 20px;
+    }
+    .event {
+        text-align: center;
+        font-size: larger;
     }
   }

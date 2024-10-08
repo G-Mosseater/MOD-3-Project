@@ -79,6 +79,7 @@ ul {
     .titles, .support h3 {
       text-align: center;
       padding-left: 0px;
+      
     }
     .support {
         width: 100%;
@@ -86,5 +87,9 @@ ul {
         padding-left: 0px;
         margin: 20px;
 
+    }
+    .chatroom, .event {
+        text-align: center;
+        font-size: larger;
     }
   }
