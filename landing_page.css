@@ -1,11 +1,12 @@
 body{
     background-attachment:fixed ;
-    background-image:url("./img/background\ page\ 1.svg");
+    background-image:url("./img/background1.svg");
     background-size: cover;
+   
+
 }
 
 h1 {
-    font-size: 48px;
     padding-left: 25px;
     margin-top : 50px;
 }
@@ -15,6 +16,14 @@ h2 {
 
 }
 
+a { 
+    color: #f1f1f1;
+
+}
+
+a:visited {
+    color: #f1f1f1;
+}
 .support {
     width: 70%;
     padding: 20px;
@@ -39,7 +48,7 @@ ul {
     list-style: none;
 }
 
-.event1 {
+.event {
     width: 80vw;
     color: #f1f1f1;
     background-color: #1664FF;
@@ -51,7 +60,7 @@ ul {
     border-radius: 40px;
 }
 
-.event2 {
+.chatroom {
     width: 80vw;
     color: #f1f1f1;
     background-color: #019C1A;
