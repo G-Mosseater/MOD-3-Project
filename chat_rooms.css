@@ -1,0 +1,120 @@
+body{
+    background-attachment:fixed ;
+    background-image:url("./img/background2.svg");
+    background-size: cover;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+a { 
+    color: #18191F; 
+}
+
+a:visited {
+    color: #18191F;
+}
+.chatroom_container {
+ padding-top: 20px;
+ padding-bottom: 40px;
+ width: 95vw;
+ padding-left: 15px;
+ height: 100%;
+ display: flex;
+ flex-flow: column;
+ justify-content:flex-start;
+ align-items:center;
+
+}
+ul {
+    list-style: none;
+}
+
+h4 {
+    font-size: large;
+}
+.chatroom {
+    width: 80vw;
+    color: #18191F;
+    background-color: #CFDFFF;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-style: solid;
+    border-color:#1664FF;
+    border-radius: 20px;
+}
+.newroom, .morerooms, .morerooms2 {
+    color: #18191F;
+    background-color: #C7DFCB;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px 5px;
+    border-style: solid;
+    border-color:#019C1A;
+    border-radius: 20px;
+}
+
+.newroom {
+    align-self:self-start;
+    width: 200px;
+    margin-left:5vw;
+}
+.morerooms {
+    align-self:self-start;
+    width: 175px;
+    margin-left:6vw;
+}
+
+.button_container {
+    padding-bottom: 40px;
+    width: 95vw;
+    padding-left: 15px;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-start;
+    align-items:center;   
+}
+
+.morerooms2 {
+    width: 175px;
+    align-self:self-end;
+    margin-left:4vw;
+  
+}
+.morerooms h4, .newroom h4, .morerooms2 h4 {
+    text-align: center;
+}
+
+/*  media queries */
+@media (min-width: 800px) {
+    /*from 800px*/
+    h1 {
+        display: block;
+      margin-top: 20px;
+    }
+    .chatroom, .button_container {
+        text-align: center;
+    }
+    .newroom, .morerooms, .morerooms2 {
+        align-self: center;
+        text-align: center;
+    }
+    .morerooms {
+        margin: 0;
+    }
+    .newroom {
+        margin-left: 30vw;
+
+    }
+  }

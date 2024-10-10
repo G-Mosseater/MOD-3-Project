@@ -1,0 +1,82 @@
+body{
+    background-attachment:fixed ;
+    background-image:url("./img/background1.svg");
+    background-size: cover;
+   
+
+}
+
+h1 {
+    padding-left: 25px;
+    margin-top : 50px;
+}
+
+h2 {
+    padding-left: 25px;
+
+}
+
+a { 
+    color: #18191F;
+
+}
+
+a:visited {
+    color: #18191F;
+}
+
+
+.events_container {
+ padding-top: 20px;
+ padding-bottom: 40px;
+ width: 95vw;
+ padding-left: 15px;
+ height: 100%;
+ display: flex;
+ flex-flow: column;
+ justify-content:flex-start;
+ align-items:center;
+
+}
+ul {
+    list-style: none;
+}
+
+.event {
+    width: 80vw;
+    color: #18191F;
+    background-color: #CFDFFF;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-style: solid;
+    border-color:#1664FF;
+    border-radius: 20px;
+}
+
+.chatroom {
+    width: 80vw;
+    color: #18191F;
+    background-color: #C7DFCB;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-style: solid;
+    border-color:#019C1A;
+    border-radius: 20px;
+}
+ 
+/*  media queries */
+  @media (min-width: 800px) {
+    /*from 800px*/
+  
+    .titles, .support h3 {
+      text-align: center;
+      padding-left: 0px;
+     
+    }
+    .chatroom, .event {
+        text-align: center;
+        font-size: larger;
+    }
+  }
