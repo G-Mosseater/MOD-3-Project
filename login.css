@@ -1,0 +1,127 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+img {
+  display: block;
+  width: 322px;
+}
+
+.logo {
+  width: 45px;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 28px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #feb930;
+  padding-left: 15px;
+}
+
+.title_holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.credential_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 61px;
+  row-gap: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 15px;
+  height: 66px;
+  min-width: 200px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid var(--Mustard-Yellow, #feb930);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+  color: #b8b8b8;
+  line-height: normal;
+  font-weight: 700;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #fff5d6;
+  outline: none;
+  border: solid #fff5d6 1px;
+}
+
+.button_container {
+  margin: auto;
+  padding-top: 48px;
+  position: relative;
+  height: 100px;
+  width: 280px;
+}
+
+.login_button {
+  position: absolute;
+  padding: 10, 20px;
+  width: 144px;
+  background-color: #feb930;
+  height: 58px;
+  border: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: -1px;
+  transition: all 0.2s;
+}
+.left {
+  border-radius: 8px;
+  z-index: 1;
+}
+.right {
+  right: 0%;
+  border-radius: 0 8px 8px 0;
+  background-color: #ffd88a;
+  font-size: 16px;
+  color: #a39883;
+}
+.left:active {
+  background-color: #ffd88a;
+  color: #a39883;
+}
+
+.right:active {
+  background-color: #feb930;
+  color: black;
+}
+
+.external_login {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.icon_holder {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
