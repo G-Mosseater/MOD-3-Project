@@ -17,20 +17,14 @@ h2 {
 }
 
 a { 
-    color: #f1f1f1;
+    color: #18191F;
 
 }
 
 a:visited {
-    color: #f1f1f1;
+    color: #18191F;
 }
-.support {
-    width: 70%;
-    padding: 20px;
-    padding-left: 50px;
-    margin: 60px;
-    margin-left: 80px;
-}
+
 
 .events_container {
  padding-top: 20px;
@@ -50,26 +44,26 @@ ul {
 
 .event {
     width: 80vw;
-    color: #f1f1f1;
-    background-color: #1664FF;
+    color: #18191F;
+    background-color: #CFDFFF;
     display: block;
     margin-bottom: 20px;
     padding: 15px;
     border-style: solid;
     border-color:#1664FF;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .chatroom {
     width: 80vw;
-    color: #f1f1f1;
-    background-color: #019C1A;
+    color: #18191F;
+    background-color: #C7DFCB;
     display: block;
     margin-bottom: 20px;
     padding: 15px;
     border-style: solid;
     border-color:#019C1A;
-    border-radius: 40px;
+    border-radius: 20px;
 }
  
 /*  media queries */
@@ -79,14 +73,7 @@ ul {
     .titles, .support h3 {
       text-align: center;
       padding-left: 0px;
-      
-    }
-    .support {
-        width: 100%;
-        padding: 20px;
-        padding-left: 0px;
-        margin: 20px;
-
+     
     }
     .chatroom, .event {
         text-align: center;

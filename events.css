@@ -10,15 +10,20 @@ h1 {
     display: block;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 a { 
-    color: #f1f1f1;
+    color: #18191F;
 
 }
 
 a:visited {
-    color: #f1f1f1;
+    color: #18191F;
 }
 
 .events_container {
@@ -39,8 +44,8 @@ ul {
 
 .event {
     width: 80vw;
-    color: #f1f1f1;
-    background-color: #1664FF;
+    color:  #18191F;
+    background-color: #CFDFFF;
     display: block;
     margin-bottom: 20px;
     padding: 15px;
@@ -48,6 +53,20 @@ ul {
     border-color:#1664FF;
     border-radius: 40px;
 }
+
+.login {
+    width: 80vw;
+    color:  #18191F;
+    background-color: #C7DFCB;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-style: solid;
+    border-color:#019C1A;
+    border-radius: 20px;
+}
+
+
 /*  media queries */
 @media (min-width: 800px) {
     /*from 800px*/
