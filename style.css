@@ -1,86 +1,101 @@
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav_icon {
+  color: #18191f;
+}
+
+.nav_link {
+  color: #18191f;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav_list,
+.nav_link {
+  display: flex;
+}
+
+.nav_link {
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_list {
+  align-items: center;
+  justify-content: space-around;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  box-shadow: rgba(127, 60, 60, 0.15) 1.95px -1.95px 2.6px;
+}
+
+.section_title {
+  text-align: center;
+}
+
+.section_height {
+  height: 100vh;
+}
+
+.nav_container {
+  padding-bottom: 30px;
+}
+
+.nav_menu {
+  background-color: #f3f4f6;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: rgba(127, 60, 60, 0.15) 1.95px -1.95px 2.6px;
+}
+
+.active .nav_icon {
+  color: #feb930;
+}
+
+@media screen and (max-width: 2200px) {
+  span {
+    font-size: 10px;
+    font-weight: bold;
   }
-  body {
-    height: 100vh;
-    font-family: "Quicksand", sans-serif;
+  .nav_name {
+    display: none;
   }
-  h1 {
-    font-size: 48px;
-  }
-  a {
-    text-decoration: none;
-  }
+
   .nav_icon {
-    color: #18191F;
+    font-size: 30px;
+    transition: all 0.5s ease;
   }
-  .nav_link {
-    color: #18191F;
-    text-decoration: none;
+}
+
+@media screen and (max-width: 300px) {
+  .nav_name {
+    display: none;
   }
-  ul {
-    list-style: none;
+
+  .nav_icon {
+    font-size: 20px;
   }
-  .nav_list,
-  .nav_link {
-    display: flex;
-  }
-  .nav_link {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav_list {
-    align-items: center;
-    justify-content: space-around;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    box-shadow: rgba(127, 60, 60, 0.15) 1.95px -1.95px 2.6px;
-  }
-  .section_title {
-    text-align: center;
-  }
-  .section_height {
-    height: 100vh;
-  }
-  .nav_container {
-    padding-bottom: 30px;
-  }
-  .nav_menu {
-    background-color: #F3F4F6;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    box-shadow: rgba(127, 60, 60, 0.15) 1.95px -1.95px 2.6px;
-  }
-  .active .nav_icon {
-    color: #FEB930;
-  }
-  @media screen and (max-width: 2200px) {
-    span {
-      font-size: 10px;
-      font-weight: bold;
-    }
-    .nav_name {
-      display: none;
-    }
-    .nav_icon {
-      font-size: 30px;
-      transition: all 0.5s ease;
-    }
-  }
-  @media screen and (max-width: 300px) {
-    .nav_name {
-      display: none;
-    }
-    .nav_icon {
-      font-size: 20px;
-    }
-  }
+}
