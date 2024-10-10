@@ -46,7 +46,6 @@ ul {
   align-items: center;
   justify-content: space-around;
   height: 80px;
-  z-index: 1000;
 }
 
 .section_title {
@@ -69,6 +68,8 @@ ul {
   left: 0;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
+  z-index: 1000;
+
 }
 
 .nav_icon:active {
