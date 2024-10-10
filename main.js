@@ -1,7 +1,7 @@
-"use strict";
+//nav bar//
 {
-    const icon = document.getElementById("icon");
-    icon.addEventListener('click', function () {
-        icon.classList.toggle('active_icon');
+    var icon_1 = document.getElementById("icon");
+    icon_1.addEventListener('click', function () {
+        icon_1.classList.toggle('active_icon');
     });
 }
