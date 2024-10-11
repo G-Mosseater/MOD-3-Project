@@ -159,7 +159,7 @@ h4{
     
 }
 
-.button:active {
+.button:checked {
     background-color: #FFECC5;
 }
 
