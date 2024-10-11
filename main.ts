@@ -16,14 +16,4 @@ icon.addEventListener('click', function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 }
