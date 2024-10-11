@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huddle</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="meetUp.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img class="logo" src="/img/Logo.png" />
+
+        <h1>Huddle</h1>
+      </div>
+      <div class="img_container">
+        <img src="/img/wave_top.svg" class="wave_img" />
+        <div class="meetup">Meetup</div>
+      </div>
+    </header>
+    <section class="info_container">
+      <div class="info_box">
+        <label class="label" for="Name">Title</label>
+        <input class="info info_text" type="text" id="Name" />
+      </div>
+      <div class="info_box" class="info_margin">
+        <label class="label" for="Name">Time</label>
+        <input class="info info_text" type="text" id="Name" />
+      </div>
+      <div class="info_box" class="info_margin">
+        <label class="label" for="Name">Date</label>
+        <input class="info info_text" type="text" id="Name" />
+      </div>
+      <div class="info_box" class="info_margin">
+        <label class="label" for="Name">Address</label>
+        <input class="info info_text" type="text" id="Name" />
+      </div>
+    </section>
+    <!-- NAV BAR  -->
+    <nav class="nav_container">
+      <div class="nav_menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="home.html" class="nav_link">
+              <img src="/img/icon home.svg" class="nav_icon" />
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="chat_rooms.html" class="nav_link">
+              <img src="/img/icon chat.svg" class="nav_icon" />
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="events.html" class="nav_link active">
+              <img src="/img/icon event.svg" class="nav_icon" />
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#Profile" class="nav_link">
+              <img src="/img/icon profile.svg" class="nav_icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script src="main.js"></script>
+  </body>
+</html>

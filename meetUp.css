@@ -1,0 +1,90 @@
+
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+.title {
+  padding-left: 40px;
+  padding-top: 20px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+h1 {
+  padding-left: 20px;
+  width: 100%;
+  color: #feb930;
+  font-size: 48px;
+}
+
+.logo {
+  width: 48px;
+  height: 45px;
+}
+.wave_img {
+  width: 100%;
+}
+.img_container {
+  position: relative;
+  width: 100%;
+}
+
+.meetup {
+  color: black;
+  text-align: center;
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  font-weight: 700;
+  bottom: 10%;
+  font-size: 48px;
+}
+
+.info_container{
+    margin-top: 26px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px; 
+   margin-bottom: 24px;
+}
+
+
+.info_text{
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+
+.info{
+    border-radius: 9px;
+    border: 1px solid var(--Mustard-Yellow, #FEB930);
+    background: #FFF;
+    display: flex;
+    height: 47px;
+    min-width: 85%;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.label{
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+}
