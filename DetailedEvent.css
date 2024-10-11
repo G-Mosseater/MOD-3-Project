@@ -33,7 +33,8 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px  10px 0  10px;
+  padding: 30px 10px 0 10px;
+  width: 100%;
 }
 
 .info_container p {
@@ -41,43 +42,82 @@ h1 {
 }
 
 .icons {
+    height:35px;
   align-items: center;
-    
+  filter: invert(48%) sepia(79%) saturate(2138%) hue-rotate(190deg) brightness(106%) contrast(103%);
+
 }
 
-
 .event_icon {
-    filter: invert(76%) sepia(78%) saturate(513%) hue-rotate(355deg) brightness(103%) contrast(103%);
 
 }
 
 .age_group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 10px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 25px;
 }
 
 .age_group p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .age_group img {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 .event_text {
-    display: block;
-    padding: 0 15px;
-    z-index: 1000;
-    margin-bottom: -150px;
+  display: block;
+  padding: 0 25px 50px;
+  z-index: 1000;
+  margin-bottom: -150px;
 }
 .event_text p {
-    font-size: 20px;
-    text-align: left;
+  font-size: 20px;
+  text-align: left;
 }
 
 .bottom_img_cont {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: -1;
 }
+.bottom_img_cont img{
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .info_container .icons {
+    height: 25px;
+  }
+  .info_container p {
+    font-size: 15px;
+    transition: all 1s ease;
+  }
+  .event_text p {
+    transition: all 1s ease;
+
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+    .info_container .icons {
+      height: 45px;
+    }
+    .info_container p {
+      font-size: 30px;
+      transition: all 1s ease;
+    }
+    .age_group p {
+        font-size: 30px;
+        transition: all 1s ease;
+
+      }
+      .event_text p {
+        font-size: 30px;
+        transition: all 1s ease;
+
+      }
+    
+  }
+  
