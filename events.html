@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huddle</title>
+<<<<<<< HEAD
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+=======
+    <title>Huddle</title>
+    <link rel="stylesheet" href="navbar.css" />
+>>>>>>> 89311c5c92c403bf5ba41638932524f972b4d417
     <link rel="stylesheet" href="events.css" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,88 +18,109 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <!-- ICONS LINK  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+
   </head>
   <body>
+    <header>
        <!-- NAV BAR  -->
        <nav class="nav_container">
         <div class="nav_menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="index.html" class="nav_link">
-                <i class='bx bx-home-alt-2 nav_icon'></i>
+              <a href="home.html" class="nav_link">
+                <img src="/img/icon home.svg" class="nav_icon" />
               </a>
             </li>
             <li class="nav_item">
-              <a href="./chat_rooms.html" class="nav_link ">
-                <i class="bx bx-message-rounded-dots nav_icon "></i>
+              <a href="chat_rooms.html" class="nav_link">
+                <img src="/img/icon chat.svg" class="nav_icon" />
               </a>
             </li>
             <li class="nav_item">
               <a href="events.html" class="nav_link active">
-                <i class="bx bx-calendar-event nav_icon"></i>
+                <img src="/img/icon event.svg" class="nav_icon" />
               </a>
             </li>
             <li class="nav_item">
               <a href="#Profile" class="nav_link">
-                <i class="bx bx-user nav_icon"></i>
+                <img src="/img/icon profile.svg" class="nav_icon" />
               </a>
             </li>
           </ul>
         </div>
       </nav>
+    </header>
     <main>
+    <img class="logo" src="./img/logo.svg" alt="huddle logo">
+      <div class="titles">
         <h1><b>All Events</b></h1>
-      <section class="events_container">
-        <div class="event">
-          <a href="events.html">
-            <ul class="event_list">
-              <h4>Small group Parent circle</h4>
-              <li><b>Time:</b> 10:00-11:00</li>
-              <li><b>Date:</b> 04/10</li>
-              <li><b>Cost:</b> Free</li>
-            </ul>
+      </div>
+      <section class="news_container">
+        <div class="news">
+          <a href="./DetailedEvent.html">
+              <h4>Baby music<img class="star" id="star-toggle" src="./img/full star icon.svg" alt="favorited item"></h4>
+                <p>Harpa offers free music experience for children and families to discover the magical world of sounds.</p>
           </a>
+          <div class="iconbar">
+          <span><img src="./img/icon event.svg" alt="icon event"> 20.11.2024</span>
+          <span><img src="./img/icon date.svg" alt="icon date">16:00</span>
+          <span><img src="./img/icon place.svg" alt="icon place"> Harpa</span>
+          </div>
         </div>
-        <div class="event">
-          <a href="events.html">
-            <ul class="event_list">
-              <h4>Event: Memm play</h4>
-              <li><strong>Time:</strong> 10:00-11:00</li>
-              <li><strong>Date:</strong> 04/10</li>
-              <li><strong>Cost:</strong> Free</li>
-            </ul>
-          </a>
+        <div class="news">
+              <h4>Meetup - Róló<img class="star" src="./img/star icon.svg" alt="click to favorite"></h4>
+                <p>Hey guys, lets meet tomorrow after the first nap. I will bring coffee.</p>
+          <div class="iconbar">
+          <span><img src="./img/icon event.svg" alt="icon event"> 28.11.2024</span>
+          <span><img src="./img/icon date.svg" alt="icon date">11:00</span>
+          <span><img src="./img/icon place.svg" alt="icon place">Langholtsvegur 50</span>
+          </div>
         </div>
-        <div class="event">
-            <a href="events.html">
-              <ul class="event_list">
-                <h4>Event: Memm play</h4>
-                <li><strong>Time:</strong> 10:00-11:00</li>
-                <li><strong>Date:</strong> 04/10</li>
-                <li><strong>Cost:</strong> Free</li>
-              </ul>
-            </a>
+        <div class="news">
+             <h4>Baby gym<img class="star" src="./img/full star icon.svg" alt="favorited item"></h4>
+              <p>Ármann gymnastics have cheap classes for babies to play around in the gym.</p>
+            <div class="iconbar">
+                <span><img src="./img/icon event.svg" alt="icon event"> 30.11.2024</span>
+                <span><img src="./img/icon date.svg" alt="icon date">10:00</span>
+                <span><img src="./img/icon place.svg" alt="icon place"> Laugaból</span>
+                </div>
         </div>
-        <div class="event">
-                <a href="events.html">
-                  <ul class="event_list">
-                    <h4>Event: Memm play</h4>
-                    <li><strong>Time:</strong> 10:00-11:00</li>
-                    <li><strong>Date:</strong> 04/10</li>
-                    <li><strong>Cost:</strong> Free</li>
-                  </ul>
-                </a>
+        <div class="news">
+              <h4>Swimming class for babies<img class="star" src="./img/star icon.svg" alt="click to favorite"></h4>
+                <p>Swim class for babies from 4 months old. You can bring older siblings along.</p>
+          <div class="iconbar">
+              <span><img src="./img/icon event.svg" alt="icon event"> 06.12.2024</span>
+              <span><img src="./img/icon date.svg" alt="icon date">10:00</span>
+              <span><img src="./img/icon place.svg" alt="icon place">Mörkin</span>
+              </div>
+      </div>
+        <div class="news">
+                <h4>Singing at the library<img class="star" src="./img/full star icon.svg" alt="favorited item"></h4>
+                  <p>Free singing at Borgarbókasafnið. Everyone welcome. Tindur will bring the 
+            <div class="iconbar">
+                <span><img src="./img/icon event.svg" alt="icon event"> 07.12.2024</span>
+                <span><img src="./img/icon date.svg" alt="icon date">10:00</span>
+                <span><img src="./img/icon place.svg" alt="icon place">Borgarbókasafn</span>
+                </div>
         </div>
-        <div class="login">
-          <a href="login.html">
-          <h4>Login to see more</h4>
-          </a>
-  </div>
+        <div class="news">
+              <h4>Memm- play<img class="star" src="./img/star icon.svg" alt="click to favorite"></h4>
+                <p>The free playschool meets again. For kids what have not started pre-school and parents to meet and play.</p>
+          <div class="iconbar">
+              <span><img src="./img/icon event.svg" alt="icon event"> 15.12.2024</span>
+              <span><img src="./img/icon date.svg" alt="icon date">10:00</span>
+              <span><img src="./img/icon place.svg" alt="icon place">Samfélagshúsið</span>
+            </div>
+        </div>
+        <div class="news">
+                <h4>Acting classes<img class="star" src="./img/star icon.svg" alt="click to favorite"></h4>
+                  <p>Free singing at Borgarbókasafnið. Everyone welcome. Tindur will bring the guitar.</p>
+          <div class="iconbar">
+                <span><img src="./img/icon event.svg" alt="icon event"> 07.12.2024</span>
+                <span><img src="./img/icon date.svg" alt="icon date">10:00</span>
+                <span><img src="./img/icon place.svg" alt="icon place">Borgarbókasafn</span>
+              </div>
+      </div>
       </section>
     </main>
 

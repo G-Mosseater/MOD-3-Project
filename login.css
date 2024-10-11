@@ -112,7 +112,7 @@ input[type="password"]:focus {
 }
 
 .icon {
-  font-size: 50px;
+  width: 30px;
 }
 
 .icon_holder {
