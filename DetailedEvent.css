@@ -1,0 +1,123 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url("./img/background1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+h1 {
+  font-size: 48px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 58px;
+}
+.img_container {
+  padding-top: 98px;
+  display: flex;
+  justify-content: center;
+}
+
+.baby_music_img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px 0 10px;
+  width: 100%;
+}
+
+.info_container p {
+  font-size: 20px;
+}
+
+.icons {
+    height:35px;
+  align-items: center;
+  filter: invert(48%) sepia(79%) saturate(2138%) hue-rotate(190deg) brightness(106%) contrast(103%);
+
+}
+
+.event_icon {
+
+}
+
+.age_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 25px;
+}
+
+.age_group p {
+  font-size: 20px;
+}
+
+.age_group img {
+  padding-right: 5px;
+}
+.event_text {
+  display: block;
+  padding: 0 25px 50px;
+  z-index: 1000;
+  margin-bottom: -150px;
+}
+.event_text p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.bottom_img_cont {
+  position: relative;
+  z-index: -1;
+}
+.bottom_img_cont img{
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .info_container .icons {
+    height: 25px;
+  }
+  .info_container p {
+    font-size: 15px;
+    transition: all 1s ease;
+  }
+  .event_text p {
+    transition: all 1s ease;
+
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+    .info_container .icons {
+      height: 45px;
+    }
+    .info_container p {
+      font-size: 30px;
+      transition: all 1s ease;
+    }
+    .age_group p {
+        font-size: 30px;
+        transition: all 1s ease;
+
+      }
+      .event_text p {
+        font-size: 30px;
+        transition: all 1s ease;
+
+      }
+    
+  }
+  
