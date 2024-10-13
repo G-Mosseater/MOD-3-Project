@@ -23,7 +23,7 @@ body {
 h1 {
     margin-top: 20px;
     text-align: center; 
-    font-size: 30px; 
+    font-size: 35px; 
 }
 
 .info_container {
@@ -62,16 +62,11 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .label {
     width: 400px;
 
-}
-
-.info_margin {
-    margin-top: 50px;
 }
 
 .container_of_interests {
