@@ -1,13 +1,15 @@
 body{
     background-attachment:fixed ;
-    background-image:url("./img/background2.svg");
-    background-size: cover;
+    background-image:url("./img/background3.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
 h1 {
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 h2 {
@@ -32,9 +34,6 @@ a {
  align-items:center;
 
 }
-ul {
-    list-style: none;
-}
 
 h4 {
     font-size: large;
@@ -42,15 +41,15 @@ h4 {
 .chatroom {
     width: 80vw;
     color: #18191F;
-    background-color: #CFDFFF;
+    background-color: #FFF5D6;
     display: block;
     margin-bottom: 20px;
     padding: 15px;
     border-style: solid;
-    border-color:#1664FF;
-    border-radius: 20px;
+    border-color:#FEB930;
+    border-radius: 8px;
 }
-.newroom, .morerooms, .morerooms2 {
+.newroom, .morerooms {
     color: #18191F;
     background-color: #C7DFCB;
     display: block;
@@ -62,12 +61,13 @@ h4 {
 }
 
 .newroom {
-    align-self:self-start;
+    align-self:end;
     width: 200px;
     margin-left:5vw;
+    margin-bottom: 70px;
 }
 .morerooms {
-    align-self:self-start;
+    align-self:start;
     width: 175px;
     margin-left:6vw;
 }
@@ -89,11 +89,22 @@ h4 {
     margin-left:4vw;
   
 }
-.morerooms h4, .newroom h4, .morerooms2 h4 {
+.morerooms h4, .newroom h4 {
     text-align: center;
 }
 
 /*  media queries */
+
+@media (min-width: 630px) {
+    /*from 630px*/
+    body {
+        background-attachment:fixed;
+        background-image:url("./img/background3.svg");
+        background-size:cover;
+        background-repeat: no-repeat;
+       
+    }
+}
 @media (min-width: 800px) {
     /*from 800px*/
     h1 {
@@ -103,7 +114,7 @@ h4 {
     .chatroom, .button_container {
         text-align: center;
     }
-    .newroom, .morerooms, .morerooms2 {
+    .newroom, .morerooms {
         align-self: center;
         text-align: center;
     }
