@@ -1,16 +1,19 @@
 body{
     background-attachment:fixed ;
-    background-image:url("./img/background3.svg");
-    background-size:contain;
-    background-repeat:no-repeat;
-   
+    background-image:url("./img/background2.svg");
+    background-size: cover;
 }
 
 h1 {
     display: block;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 a { 
@@ -25,67 +28,48 @@ a {
  height: 100%;
  display: flex;
  flex-flow: column;
+ justify-content:flex-start;
  align-items:center;
 
 }
-
-.title {
-    align-self: start;
-    margin-bottom: 20px;
-    margin-left:6vw;
-    width: 13rem;
-    height: 3rem;
-    padding: 10px;
-    border: none;
-    background-color: #FEB930;
-    border-radius: 8px;
-    overflow: hidden;
- 
-}
-h2 {
-    text-align: center;
-    font-size: 24px;
+ul {
+    list-style: none;
 }
 
 h4 {
     font-size: large;
 }
-
-h5 {
-    font-size: 12px;
-    font-weight: 800;
-}
 .chatroom {
-    position: relative;
     width: 80vw;
-    background-color: #FFF5D6;
-    display: flex;
+    color: #18191F;
+    background-color: #CFDFFF;
+    display: block;
     margin-bottom: 20px;
     padding: 15px;
     border-style: solid;
-    border-color:#FEB930;
-    border-radius: 8px;
+    border-color:#1664FF;
+    border-radius: 20px;
 }
-
-.chatroom img {
-    position: absolute;
-    top:10px;
-    right: 10px;
-}
-
-.morerooms {
-    background-color: #FEB930;
+.newroom, .morerooms, .morerooms2 {
+    color: #18191F;
+    background-color: #C7DFCB;
+    display: block;
     margin-bottom: 20px;
-    width: 6rem;
-    padding: 10px;
-    align-self:start;
-    margin-left:6vw;
-    border-style: none;
-    border-radius: 8px;
+    padding: 15px 5px;
+    border-style: solid;
+    border-color:#019C1A;
+    border-radius: 20px;
 }
 
-.morerooms h5 {
-    text-align: center;
+.newroom {
+    align-self:self-start;
+    width: 200px;
+    margin-left:5vw;
+}
+.morerooms {
+    align-self:self-start;
+    width: 175px;
+    margin-left:6vw;
 }
 
 .button_container {
@@ -95,47 +79,39 @@ h5 {
     height: 100%;
     display: flex;
     flex-flow: row;
-    justify-content:flex-end;   
-}
-.newroom {
-    width: 11rem;
-    padding: 10px;
-    margin-right: 20px;
-    margin-bottom: 70px;
-    background-color:#1664FF;
-    border-radius: 8px;
-    
+    justify-content:flex-start;
+    align-items:center;   
 }
 
-.newroom a {
-    color: #ffffff;
+.morerooms2 {
+    width: 175px;
+    align-self:self-end;
+    margin-left:4vw;
+  
 }
-.newroom h3 {
-    font-size: 16px;
+.morerooms h4, .newroom h4, .morerooms2 h4 {
     text-align: center;
 }
 
 /*  media queries */
-
 @media (min-width: 800px) {
     /*from 800px*/
     h1 {
         display: block;
-        margin-top: 20px;
-    
-    }
-
-    .title {
-        align-self: center;
+      margin-top: 20px;
     }
     .chatroom, .button_container {
         text-align: center;
     }
-
+    .newroom, .morerooms, .morerooms2 {
+        align-self: center;
+        text-align: center;
+    }
     .morerooms {
-        margin-left: 7vw;
+        margin: 0;
     }
     .newroom {
-        margin-right: 7vw;
+        margin-left: 30vw;
+
     }
   }
