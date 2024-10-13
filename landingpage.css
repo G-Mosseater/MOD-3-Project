@@ -113,13 +113,17 @@ a {
 /*  media queries */
 
 @media (min-width: 630px) {
-    /*from 630px*/
+    /*from 630px because it is the width of the background img*/
     body {
         background-attachment:fixed;
         background-image:url("./img/background2.svg");
         background-size:cover;
         background-repeat: no-repeat;
        
+    }
+    
+    .button {
+        border: solid #18191F;
     }
 }
 
