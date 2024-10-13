@@ -107,6 +107,7 @@ input[type="password"]:focus {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 70px;
+  
 }
 
 .icon {
@@ -120,6 +121,6 @@ input[type="password"]:focus {
 }
 
 a {
-  color: ##18191F;
+  color: #18191F;
   text-decoration: none;
 }
