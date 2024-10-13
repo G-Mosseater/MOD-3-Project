@@ -17,7 +17,7 @@
   <body>
     <header>
       <div class="title">
-        <img class="logo" src="/img/Logo.png" />
+        <img class="logo" src="./img/Logo.png" />
 
         <h1>Huddle</h1>
       </div>
@@ -28,48 +28,61 @@
     </header>
     <section class="info_container">
       <div class="info_box">
-        <label class="label" for="Name">Title</label>
+        <label class="label" for="Title">Title</label>
         <input class="info info_text" type="text" id="Name" />
       </div>
       <div class="info_box" class="info_margin">
-        <label class="label" for="Name">Time</label>
+        <label class="label" for="Time">Time</label>
         <input class="info info_text" type="text" id="Name" />
       </div>
       <div class="info_box" class="info_margin">
-        <label class="label" for="Name">Date</label>
+        <label class="label" for="Date">Date</label>
         <input class="info info_text" type="text" id="Name" />
       </div>
       <div class="info_box" class="info_margin">
-        <label class="label" for="Name">Address</label>
+        <label class="label" for="Address">Address</label>
         <input class="info info_text" type="text" id="Name" />
+      </div>
+      <div class="description">
+        <label class="label" for="Name">Description</label>
+        <textarea
+          class="desc"
+          name="comments"
+          rows="5"
+          placeholder="Enter your description"
+        ></textarea>
+      </div>
+
+      <div class="button_container">
+        <button class="create_button">Create</button>
+      </div>
+      <div class="image_bottom_container">
+        <img class="bottom_image" src="./img/background_bottom.svg" />
       </div>
     </section>
-    <div class="description" >
-      <label class="label" for="Name">Description</label>
-      <textarea class="desc" name="comments" rows="5" cols="40" placeholder="Enter your description"></textarea>
-    </div>
+
     <!-- NAV BAR  -->
     <nav class="nav_container">
       <div class="nav_menu">
         <ul class="nav_list">
           <li class="nav_item">
             <a href="home.html" class="nav_link">
-              <img src="/img/icon home.svg" class="nav_icon" />
+              <img src="./img/icon home.svg" class="nav_icon" />
             </a>
           </li>
           <li class="nav_item">
             <a href="chat_rooms.html" class="nav_link">
-              <img src="/img/icon chat.svg" class="nav_icon" />
+              <img src="./img/icon chat.svg" class="nav_icon" />
             </a>
           </li>
           <li class="nav_item">
             <a href="events.html" class="nav_link active">
-              <img src="/img/icon event.svg" class="nav_icon" />
+              <img src="./img/icon event.svg" class="nav_icon" />
             </a>
           </li>
           <li class="nav_item">
             <a href="#Profile" class="nav_link">
-              <img src="/img/icon profile.svg" class="nav_icon" />
+              <img src="./img/icon profile.svg" class="nav_icon" />
             </a>
           </li>
         </ul>
