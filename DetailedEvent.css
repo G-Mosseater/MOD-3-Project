@@ -42,15 +42,13 @@ h1 {
 }
 
 .icons {
-    height:35px;
+  height: 35px;
   align-items: center;
-  filter: invert(48%) sepia(79%) saturate(2138%) hue-rotate(190deg) brightness(106%) contrast(103%);
-
+  filter: invert(48%) sepia(79%) saturate(2138%) hue-rotate(190deg)
+    brightness(106%) contrast(103%);
 }
 
-.event_icon {
 
-}
 
 .age_group {
   display: flex;
@@ -81,8 +79,8 @@ h1 {
   position: relative;
   z-index: -1;
 }
-.bottom_img_cont img{
-    width: 100%;
+.bottom_img_cont img {
+  width: 100%;
 }
 
 @media screen and (max-width: 400px) {
@@ -95,29 +93,23 @@ h1 {
   }
   .event_text p {
     transition: all 1s ease;
-
   }
 }
 
-
 @media screen and (min-width: 700px) {
-    .info_container .icons {
-      height: 45px;
-    }
-    .info_container p {
-      font-size: 30px;
-      transition: all 1s ease;
-    }
-    .age_group p {
-        font-size: 30px;
-        transition: all 1s ease;
-
-      }
-      .event_text p {
-        font-size: 30px;
-        transition: all 1s ease;
-
-      }
-    
+  .info_container .icons {
+    height: 45px;
   }
-  
+  .info_container p {
+    font-size: 30px;
+    transition: all 1s ease;
+  }
+  .age_group p {
+    font-size: 30px;
+    transition: all 1s ease;
+  }
+  .event_text p {
+    font-size: 30px;
+    transition: all 1s ease;
+  }
+}
