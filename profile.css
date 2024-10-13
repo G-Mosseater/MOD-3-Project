@@ -5,37 +5,29 @@ body {
     background-repeat: no-repeat;
     background-color: #ffffff;
     background-position: bottom;
- 
-    
-   
+
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-.avatar{
+.avatar {
     display: flex;
     justify-content: center;
 
 }
 
-.title{
-    color: #000;
-    text-align: center;
-    font-family: Quicksand;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 26px;
-    
+h1 {
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 30px; 
 }
 
-.info_container{
-    margin-top: 26px;
+.info_container {
+   margin-top: 26px;
    display: flex;
    flex-direction: column;
    gap: 24px; 
@@ -43,9 +35,7 @@ body {
 }
 
 
-.info_text{
-    color: #000;
-    font-family: Quicksand;
+.info_text {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -54,10 +44,9 @@ body {
 }
 
 
-.info{
+.info {
     border-radius: 9px;
     border: 1px solid var(--Mustard-Yellow, #FEB930);
-    background: #FFF;
     display: flex;
     height: 47px;
     width: 400px;
@@ -68,7 +57,7 @@ body {
     flex-shrink: 0;
 }
 
-.info_box{
+.info_box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,24 +65,23 @@ body {
 
 }
 
-.label{
+.label {
     width: 400px;
 
 }
 
-.info_margin{
+.info_margin {
     margin-top: 50px;
-
 }
 
-.container_of_interests{
+.container_of_interests {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.subjects_of_interests_container{
+.subjects_of_interests_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,59 +89,49 @@ body {
     max-width: 395px;
 }
 
-
-
-h4{
+h2 {
     font-weight: 400;
     font-size: 16px;
 }
 
-.text{
+.text {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
-.interest_section{
+.interest_section {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 28px;
    padding-top: 20px;
-   
-
-
 }
 
-
-.subjects_posistion{
+.subjects_position {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.button_active{
+.button_active {
     background-color: #FFECC5;
     border: none;
     border-radius: 10px;
-    color: #000;
     padding: 9px 17px;
     text-align: center;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal
 
 }
 
-.button{
-    background-color: white;
+.button {
     border: 1px solid #FFECC5;
     border-radius: 10px;
     padding: 9px 17px;
     text-align: center;
     font-size: 12px;
-    font-family: Quicksand;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
 
     
@@ -163,7 +141,7 @@ h4{
     background-color: #FFECC5;
 }
 
-.create_button_posistion{
+.create_button_position{
     margin-top: 17px;
     display: flex;
     justify-content: center;
@@ -172,15 +150,15 @@ h4{
 .create_button{
     background: #1664FF;
     border: none;
-    border: 1 px solid #1664FF;
+    border: 1px solid #1664FF;
     border-radius: 10px;
     color: #fff;
-    padding: 66 px 11px;
+    padding: 6px 11px;
     text-align: center;
     font-size: 16px;
     font-family: Quicksand;
     outline: none;
-    margin: 4px 2px;
+    margin: 24px 2px;
     cursor: pointer;
     width: 189px;
     height: 47px;
