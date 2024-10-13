@@ -4,6 +4,11 @@ const buttons = document.querySelectorAll(".button");
 console.log("buttons", buttons);
 buttons.forEach(button => {
     button.addEventListener("click", event => {
-        button.style.backgroundColor = "#FFECC5";
+        if (button.style.backgroundColor === "rgb(255, 236, 197)" || button.style.backgroundColor === "#ffecc5") {
+            button.style.backgroundColor = "#FFFFFF";
+        }
+        else {
+            button.style.backgroundColor = "#FFECC5";
+        }
     });
 });
