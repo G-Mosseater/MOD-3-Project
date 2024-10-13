@@ -9,10 +9,8 @@ html {
 body {
   height: 100vh;
   font-family: "Quicksand", sans-serif;
-}
-
-h1 {
-  font-size: 48px;
+  background-color: #ffffff;
+  color: #18191f;
 }
 
 a {
