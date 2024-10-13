@@ -19,7 +19,7 @@ h1 {
   padding-top: 58px;
 }
 .img_container {
-  padding-top: 98px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
 }
@@ -44,8 +44,7 @@ h1 {
 .icons {
   height: 35px;
   align-items: center;
-  filter: invert(48%) sepia(79%) saturate(2138%) hue-rotate(190deg)
-    brightness(106%) contrast(103%);
+ 
 }
 
 

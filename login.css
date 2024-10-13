@@ -1,6 +1,3 @@
-* {
-  font-family: "Quicksand", sans-serif;
-}
 
 img {
   display: block;
@@ -76,7 +73,7 @@ input[type="password"]:focus {
   background-color: #feb930;
   height: 58px;
   border: none;
-  color: black;
+  color: #18191F;
   font-size: 16px;
   font-weight: 700;
   margin-left: -1px;
@@ -100,7 +97,7 @@ input[type="password"]:focus {
 
 .right:active {
   background-color: #feb930;
-  color: black;
+  color: #18191F;
 }
 
 .external_login {
@@ -109,6 +106,7 @@ input[type="password"]:focus {
   height: 50px;
   width: 100%;
   margin-top: 100px;
+  margin-bottom: 70px;
 }
 
 .icon {
@@ -122,6 +120,6 @@ input[type="password"]:focus {
 }
 
 a {
-  color: black;
+  color: ##18191F;
   text-decoration: none;
 }
