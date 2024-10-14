@@ -13,7 +13,7 @@ const showFavorite = () => {
     if (!newscontainer)
         return 0
     newscontainer.innerHTML = ""
-    events.forEach ((event:string, i)=> {
+    events.forEach ((event:string, i:number)=> {
         const container = document.createElement ("div")
         container.innerHTML = event
         const singlenews = container.querySelector(".news") as HTMLElement
