@@ -43,6 +43,7 @@ h4 {
 
 a { 
     color: #18191F;
+    display: block;
 }
 
 .news_container {
