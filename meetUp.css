@@ -140,12 +140,15 @@ h1 {
   transform: scale(0.98);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-
+#messageContainer {
+  text-align: center;
+}
 .image_bottom_container {
   width: 100%;
   position: absolute;
   z-index: -10;
   bottom: 0;
+  margin-bottom: -100px;
 }
 
 .bottom_image {
