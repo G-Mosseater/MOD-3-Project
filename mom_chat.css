@@ -141,7 +141,9 @@ p {
     .time_right {
     
         right: 1rem;
-        top: 4rem;
+        top: 2.5rem;
     }
-   
+   .chat_left, .chat_right {
+    width: auto;
+   }
   }
