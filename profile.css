@@ -159,8 +159,7 @@ input:focus {
   border: solid #fff5d6 1px;
 }
 
-
 input[type="text"] {
-    font-size: 14px;
-    color: grey
+  font-size: 14px;
+  color: grey;
 }

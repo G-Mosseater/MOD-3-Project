@@ -66,21 +66,14 @@ ul {
   }
 }
 .nav_link.active {
-  filter: brightness(0) saturate(100%) invert(59%) sepia(100%) saturate(652%) hue-rotate(357deg) brightness(105%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(59%) sepia(100%) saturate(652%)
+    hue-rotate(357deg) brightness(105%) contrast(101%);
 }
 
 .nav_link.active .nav_icon {
-  filter: brightness(0) saturate(100%) invert(59%) sepia(100%) saturate(652%) hue-rotate(357deg) brightness(105%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(59%) sepia(100%) saturate(652%)
+    hue-rotate(357deg) brightness(105%) contrast(101%);
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 300px) {
   .nav_name {
