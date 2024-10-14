@@ -1,8 +1,16 @@
 "use strict";
-//favorite items//
+// Favorite items
 {
     const stars = document.querySelectorAll(".star");
-    const events = [];
+    let events = [];
+    const changeLocalStorage = () => {
+        events = [];
+        stars.forEach(star => {
+            var _a, _b;
+            events.push(((_b = (_a = star === null || star === void 0 ? void 0 : star.parentElement) === null || _a === void 0 ? void 0 : _a.parentElement) === null || _b === void 0 ? void 0 : _b.outerHTML) || "");
+        });
+        localStorage.setItem("events", JSON.stringify(events));
+    };
     stars.forEach(star => {
         var _a, _b;
         star.addEventListener("click", () => {
@@ -14,9 +22,9 @@
                 star.src = "./img/star icon.svg";
                 star.alt = "click to favorite";
             }
+            changeLocalStorage();
         });
         events.push(((_b = (_a = star === null || star === void 0 ? void 0 : star.parentElement) === null || _a === void 0 ? void 0 : _a.parentElement) === null || _b === void 0 ? void 0 : _b.outerHTML) || "");
-        localStorage.setItem("events", JSON.stringify(events));
     });
     localStorage.setItem("events", JSON.stringify(events));
 }
