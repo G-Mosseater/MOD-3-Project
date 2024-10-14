@@ -93,8 +93,9 @@ p {
 }
 
 .button_container {
+    position: absolute;
+    bottom: 100vh;
     margin-top: 30px;
-    margin-bottom: 70px;
     display: flex;
     flex-flow: row;
     align-self:end;   
