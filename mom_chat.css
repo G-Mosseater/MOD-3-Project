@@ -55,11 +55,11 @@ p {
     align-self: end;
     text-align: end;
     color: #18191F;
-    background-color: #FAFFFB;
+    background-color: #F1F6FF;
     margin-bottom: 20px;
     border-style: solid;
     border-width: 1px;
-    border-color:#019C1A;
+    border-color:#1664FF;
     border-radius: 50px;
 }
 .time_left {
@@ -70,7 +70,7 @@ p {
 }
 .time_right {
     position: absolute;
-    color: #019C1A;
+    color: #1664FF;
     right: 1rem;
     top: 5rem;
 }
