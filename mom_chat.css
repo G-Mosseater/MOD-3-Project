@@ -1,6 +1,8 @@
 .background {
   background-color: #feb930;
   padding-bottom: 25px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 a {
   color: #18191f;
@@ -26,15 +28,17 @@ h5 {
 }
 p {
   font-size: 16px;
+  font-weight: 500;
 }
 .chat_container {
   padding: 20px;
   width: 100vw;
-  height: 100%;
+  height: calc(100vh - 360px);
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: auto;
 }
 
 .chat_left {
@@ -61,6 +65,7 @@ p {
   border-width: 1px;
   border-color: #1664ff;
   border-radius: 50px;
+
 }
 .time_left {
   position: absolute;
@@ -132,16 +137,7 @@ p {
 }
 
 .chat_input {
-  position: fixed;
-  bottom: 100px;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 10px;
-}
-
-.chatEnter {
-  max-width: 90%;
+  max-width: 80%;
   height: 2.8rem;
   border-radius: 8px;
   flex: 1;
@@ -151,12 +147,14 @@ p {
   color: grey;
 }
 
-
-
-.chat_wrapper {
+.chat_form {
   display: flex;
   align-items: center;
-  width: 85%;
+  position: fixed;
+  bottom: 100px;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
 }
 input[type="text"]:focus {
   background-color: #fff5d6;
@@ -164,7 +162,11 @@ input[type="text"]:focus {
   border: solid #fff5d6 1px;
 }
 
-.chat_wrapper img {
-  padding-left: 5px;
-  cursor: pointer;
+.send_button {
+  height: 2.8rem;
+  width: 50px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #fff5d6;
 }
