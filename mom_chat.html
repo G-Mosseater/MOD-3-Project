@@ -43,18 +43,22 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <header>
+      <!--header with background and logo-->
       <div class="background">
-        <div class="logos">
-          <a href="./chat_rooms.html"
-            ><img src="img/arrow.svg" alt="click here to go back" />
-          </a>
-          <!--the alt is in consideration of accessibility and readers for the blind-->
-          <img src="./img/flower icon.svg" alt="flower doodle" />
-          <a href="./login.html">
-            <img src="./img/logo alone 1.svg" alt="huddle logo" />
-          </a>
-        </div>
+      <div class="logos">
+        <a href="./chat_rooms.html"
+          ><img src="img/arrow.svg" alt="click here to go back" />
+        </a>
+        <!--the alt is in consideration of accessibility and readers for the blind-->
+        <img src="./img/flower icon.svg" alt="flower doodle" />
+        <a href="./login.html">
+          <img src="./img/logo alone 1.svg" alt="huddle logo" />
+        </a>
+      </div>
+    </header>
+    <main>
+      
         <h1>Mom Chat Room</h1>
         <div class="button_container">
           <div class="button">
@@ -64,8 +68,10 @@
           </div>
         </div>
       </div>
+      <!--chat container-->
       <section class="chat_container">
         <h5>Eva</h5>
+        <!--left chat element-->
         <div class="chat_left">
           <p>
             Hi! Is someone going at the meeting at the Library tomorrow morning?
@@ -89,6 +95,7 @@
           <p>Should be around 10 am? Can't wait to see you!</p>
           <div class="time_left"><p>12:22 PM</p></div>
         </div>
+        <!--right chat element-->
         <div class="chat_right">
           <p>
             Hi girls, I just checked in the homepage and they change the time
@@ -103,10 +110,11 @@
           <div class="time_left"><p>12:25 PM</p></div>
         </div>
       </section>
+      <!--input form-->
       <form class="chat_form">
         <input class="chat_input" type="text" placeholder="type here..." />
         <button type="submit" class="send_button">Send</button>
-        <!--the alt is in consideration of accessibility and readers for the blind-->
+        
       </form>
     </main>
     <script src="mom_chat.js"></script>

@@ -32,9 +32,10 @@ h4 {
 a { 
     color: #18191F;
 }
+/* card container styling */
 
 .news_container {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 70px;
     width: 100vw;
     height: 100%;
@@ -43,6 +44,8 @@ a {
     justify-content:flex-start;
     align-items:center;
 }
+
+/* card styling */
 
 .news {
     position: relative;

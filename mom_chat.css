@@ -29,6 +29,13 @@ h5 {
 p {
   font-size: 16px;
   font-weight: 500;
+
+}
+.chat_left p {
+  margin: 5px;
+}
+.chat_right p {
+  margin: 5px;
 }
 .chat_container {
   padding: 20px;
