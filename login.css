@@ -36,6 +36,7 @@ h1 {
   row-gap: 20px;
 }
 
+/* input containers styling */
 input[type="text"],
 input[type="password"] {
   padding: 15px;
@@ -50,6 +51,8 @@ input[type="password"] {
   line-height: normal;
   font-weight: 700;
 }
+
+/* input style while focusing */
 
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -105,7 +108,7 @@ input[type="password"]:focus {
   justify-content: center;
   height: 50px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 70px;
   
 }

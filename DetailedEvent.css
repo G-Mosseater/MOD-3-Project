@@ -4,11 +4,14 @@
 
 body {
   background-attachment: fixed;
-  background-image: url("./img/background2.svg");
+  background-image: url("./img/Background/background2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
+
+/* header styling */
+
 h1 {
   font-size: 48px;
 }
@@ -40,11 +43,11 @@ h1 {
 .info_container p {
   font-size: 20px;
 }
+/* icon styling */
 
 .icons {
   height: 35px;
   align-items: center;
- 
 }
 
 .age_group {
@@ -83,6 +86,9 @@ h1 {
   width: 100%;
 }
 
+
+/* media queries styling elements when the screen is under 400px */
+
 @media screen and (max-width: 400px) {
   .info_container .icons {
     height: 25px;
@@ -95,6 +101,9 @@ h1 {
     transition: all 1s ease;
   }
 }
+
+
+/* media queries styling elements starting at 700px */
 
 @media screen and (min-width: 700px) {
   .info_container .icons {

@@ -1,6 +1,6 @@
 body {
     background-attachment:fixed;
-    background-image:url("./img/background1.svg");
+    background-image:url("./img/Background/background1.svg");
     background-size:contain;
     background-repeat: no-repeat;
     background-color: #ffffff;
@@ -32,6 +32,7 @@ h4 {
 a { 
     color: #18191F;
 }
+/* card container styling */
 
 .news_container {
     padding-top: 15px;
@@ -43,6 +44,8 @@ a {
     justify-content:flex-start;
     align-items:center;
 }
+
+/* card styling */
 
 .news {
     position: relative;
@@ -90,7 +93,7 @@ a {
     /*from 630px*/
     body {
         background-attachment:fixed;
-        background-image:url("./img/background2.svg");
+        background-image:url("./img/Background/background2.svg");
         background-size:cover;
         background-repeat: no-repeat;
        
