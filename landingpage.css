@@ -4,25 +4,37 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
     background-color: #ffffff;
- 
-    
    
 }
-
-.logo {
-    margin-left: 25px;
+.logos {
+    display: flex;
+    flex-direction: row;
+    margin:20px 25px 60px;
+    justify-content: space-between;
 }
+
+.profileLogo {
+    margin-top: 5px;
+}
+
 h1 {
-    padding-left: 25px;
-    margin-top : 60px;
-    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-bottom: 20px;
     font-size: 48px;
    
 }
 
 h2 {
-    padding-left: 25px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    align-self: start;
+    margin-left: 4vw;
+}
+
+h3 {
+    padding: 25px;
+    font-size: 20px;
 }
 
 h4 {
@@ -31,12 +43,11 @@ h4 {
 
 a { 
     color: #18191F;
+    display: block;
 }
-/* card container styling */
 
 .news_container {
-    padding-top: 15px;
-    padding-bottom: 70px;
+    padding-top: 20px;
     width: 100vw;
     height: 100%;
     display: flex;
@@ -44,8 +55,6 @@ a {
     justify-content:flex-start;
     align-items:center;
 }
-
-/* card styling */
 
 .news {
     position: relative;
@@ -75,28 +84,47 @@ a {
     margin-top: 10px; 
 }
   
- .iconbar span {
+.iconbar span {
     font-size: medium;
      display: flex;
      align-items: center;
  }
   
- .iconbar img {
+.iconbar img {
     margin-right: 5px; 
  }
 
- 
- 
+.aboutus p {
+    padding: 0 4vw;
+}
+.button {
+    margin: 50px auto 70px;
+    width: 20rem;
+    height: 3.75rem;
+    text-align: center;
+    background-color: #FEB930;
+    border-radius: 8px;
+}
+
+.button span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 3.4rem; 
+}
 /*  media queries */
 
 @media (min-width: 630px) {
-    /*from 630px*/
+    /*from 630px because it is the width of the background img*/
     body {
         background-attachment:fixed;
         background-image:url("./img/Background/background2.svg");
         background-size:cover;
         background-repeat: no-repeat;
        
+    }
+    
+    .button {
+        border: solid #18191F;
     }
 }
 

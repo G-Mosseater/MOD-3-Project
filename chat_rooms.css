@@ -1,120 +1,149 @@
-body{
-    background-attachment:fixed ;
-    background-image:url("./img/background2.svg");
-    background-size: cover;
+/* adds background image */
+body {
+  background-attachment: fixed;
+  background-image: url("./img/background3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
+/* header styling */
 h1 {
-    display: block;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+/* anchor text color */
+a {
+  color: #18191f;
+}
+/* chat room container style */
+
+.chatroom_container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 95vw;
+  padding-left: 15px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+/* title styling,  Active/general rooms */
+
+.title {
+  align-self: start;
+  margin-bottom: 20px;
+  margin-left: 6vw;
+  width: 13rem;
+  height: 3rem;
+  padding: 10px;
+  border: none;
+  background-color: #feb930;
+  border-radius: 8px;
+  overflow: hidden;
 }
 h2 {
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-a { 
-    color: #18191F; 
-}
-
-a:visited {
-    color: #18191F;
-}
-.chatroom_container {
- padding-top: 20px;
- padding-bottom: 40px;
- width: 95vw;
- padding-left: 15px;
- height: 100%;
- display: flex;
- flex-flow: column;
- justify-content:flex-start;
- align-items:center;
-
-}
-ul {
-    list-style: none;
+  text-align: center;
+  font-size: 24px;
 }
 
 h4 {
-    font-size: large;
-}
-.chatroom {
-    width: 80vw;
-    color: #18191F;
-    background-color: #CFDFFF;
-    display: block;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-style: solid;
-    border-color:#1664FF;
-    border-radius: 20px;
-}
-.newroom, .morerooms, .morerooms2 {
-    color: #18191F;
-    background-color: #C7DFCB;
-    display: block;
-    margin-bottom: 20px;
-    padding: 15px 5px;
-    border-style: solid;
-    border-color:#019C1A;
-    border-radius: 20px;
+  font-size: large;
 }
 
-.newroom {
-    align-self:self-start;
-    width: 200px;
-    margin-left:5vw;
+h5 {
+  font-size: 12px;
+  font-weight: 800;
 }
+
+/*  */
+.chatroom {
+  position: relative;
+  width: 80vw;
+  background-color: #fff5d6;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-style: solid;
+  border-color: #feb930;
+  border-radius: 8px;
+}
+/* chat icon styling */
+
+.chatroom img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* button styling */
+
 .morerooms {
-    align-self:self-start;
-    width: 175px;
-    margin-left:6vw;
+  background-color: #feb930;
+  margin-bottom: 20px;
+  width: 6rem;
+  padding: 10px;
+  align-self: start;
+  margin-left: 6vw;
+  border-style: none;
+  border-radius: 8px;
 }
+
+.morerooms h5 {
+  text-align: center;
+}
+
+/* new room button styling */
 
 .button_container {
-    padding-bottom: 40px;
-    width: 95vw;
-    padding-left: 15px;
-    height: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content:flex-start;
-    align-items:center;   
+  padding-bottom: 40px;
+  width: 95vw;
+  padding-left: 15px;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+.newroom {
+  width: 11rem;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 70px;
+  background-color: #1664ff;
+  border-radius: 8px;
 }
 
-.morerooms2 {
-    width: 175px;
-    align-self:self-end;
-    margin-left:4vw;
-  
+.newroom a {
+  color: #ffffff;
 }
-.morerooms h4, .newroom h4, .morerooms2 h4 {
-    text-align: center;
+.newroom h3 {
+  font-size: 16px;
+  text-align: center;
 }
 
 /*  media queries */
-@media (min-width: 800px) {
-    /*from 800px*/
-    h1 {
-        display: block;
-      margin-top: 20px;
-    }
-    .chatroom, .button_container {
-        text-align: center;
-    }
-    .newroom, .morerooms, .morerooms2 {
-        align-self: center;
-        text-align: center;
-    }
-    .morerooms {
-        margin: 0;
-    }
-    .newroom {
-        margin-left: 30vw;
 
-    }
+/* media queries chaiging style of the follwing elements starting at 800px */
+
+@media (min-width: 800px) {
+  /*from 800px*/
+  h1 {
+    display: block;
+    margin-top: 20px;
   }
+
+  .title {
+    align-self: center;
+  }
+  .chatroom,
+  .button_container {
+    text-align: center;
+  }
+
+  .morerooms {
+    margin-left: 7vw;
+  }
+  .newroom {
+    margin-right: 7vw;
+  }
+}

@@ -1,0 +1,156 @@
+.title {
+  padding-left: 40px;
+  padding-top: 10px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+h1 {
+  padding-left: 20px;
+  width: 100%;
+  color: #feb930;
+  font-size: 48px;
+}
+
+.logo {
+  width: 48px;
+  height: 45px;
+}
+.wave_img {
+  width: 100%;
+}
+.img_container {
+  position: relative;
+  width: 100%;
+}
+
+.meetup {
+  color: black;
+  text-align: center;
+  z-index: 1000;
+  width: 100%;
+  position: absolute;
+  font-weight: 700;
+  bottom: 10%;
+  font-size: 48px;
+}
+
+.info_container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info_text {
+  color: #18191F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.info {
+  border-radius: 9px;
+  border: 1px solid var(--Mustard-Yellow, #feb930);
+  display: flex;
+  height: 47px;
+  min-width: 85%;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  justify-content: flex-start;
+  width: 85%;
+  height: 25px;
+}
+
+.info_description {
+  height: 200px;
+  width: 85%;
+  border-radius: 8px;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 227px;
+}
+
+.desc {
+  border: 1px solid #feb930;
+  border-radius: 8px;
+  width: 85%;
+  height: 200px;
+  padding: 4%;
+  background-color: #fff5d6;
+}
+
+.desc::placeholder {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.desc:focus {
+  background-color: #fff5d6;
+  outline: none;
+  border: solid #fff5d6 1px;
+}
+
+.info:focus {
+  background-color: #fff5d6;
+  outline: none;
+  border: solid #fff5d6 1px;
+}
+
+.button_container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+.create_button {
+  width: 184px;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #1664ff;
+  color: white;
+}
+
+.create_button:active {
+  background-color: #0f4ac9;
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+#messageContainer {
+  text-align: center;
+}
+.image_bottom_container {
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  bottom: 0;
+  margin-bottom: -100px;
+}
+
+.bottom_image {
+  width: 100%;
+}
