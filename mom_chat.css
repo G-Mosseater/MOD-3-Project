@@ -29,14 +29,11 @@ h5 {
 p {
   font-size: 16px;
   font-weight: 500;
+}
+.chat_left p, .chat_right p {
+  margin: 5px;
+}
 
-}
-.chat_left p {
-  margin: 5px;
-}
-.chat_right p {
-  margin: 5px;
-}
 .chat_container {
   padding: 20px;
   width: 100vw;
@@ -59,6 +56,7 @@ p {
   border-color: #feb930;
   border-radius: 50px;
 }
+
 .chat_right {
   position: relative;
   max-width: 80%;
@@ -72,7 +70,6 @@ p {
   border-width: 1px;
   border-color: #1664ff;
   border-radius: 50px;
-
 }
 .time_left {
   position: absolute;
