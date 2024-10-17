@@ -42,7 +42,7 @@ const showFavorite = () => {
         // Add a click event listener to the star element
         star.addEventListener("click", () => {
             // Calls the unfavorite function to remove the item from favorites
-            unfavorite(star)
+            unfavorite(star);
             
             // Updates the events array by replacing the current event with the updated HTML structure 
             // of the parent elements (star’s grandparent element)
