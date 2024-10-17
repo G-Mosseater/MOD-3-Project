@@ -93,7 +93,7 @@ a {
     /*from 630px*/
     body {
         background-attachment:fixed;
-        background-image:url("./img/Background/background2.svg");
+        background-image:url("../img/Background/background2.svg");
         background-size:cover;
         background-repeat: no-repeat;
        
