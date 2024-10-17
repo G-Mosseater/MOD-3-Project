@@ -33,88 +33,60 @@ if (chatForm && chatInput) {
     });
 }
 // declares  new asynchronous function
+//variable that stores the response from the link into a json file
 function getJoke() {
     return __awaiter(this, void 0, void 0, function* () {
         const jokeResponse = yield fetch("https://icanhazdadjoke.com/", {
-            //variable that stores the response from the link into a json file
-            function: getJoke()
-        }, {
-            const: jokeData = yield fetch("https://icanhazdadjoke.com/", {
-                headers: {
-                    Accept: "application/json",
-                },
-            }),
-            const: jokeData = yield jokeResponse.json(), //parsing the response into a json format
-            return: jokeData
-        }, getJoke());
-        //declares a asynchronous function
-        const postJoke = () => __awaiter(this, void 0, void 0, function* () {
-            if (!chatInput)
-                return 0; // if chat input is null or undefined returns 0 preventing further execution
-            const chatDiv = document.createElement("div"); //creates new chat bubble
-            chatDiv.classList.add("chat_left"); // assigns class to the chat
-            const jokeObject = yield getJoke(); //variable stores result from the getJoke function
-            const chatText = jokeObject.joke; //extracting the joke text
-            chatDiv.innerHTML = `<p>${chatText} </p>`; //sets the content of chatdiv with joke text
-            if (!chatContainer)
-                return 0;
-            chatContainer.appendChild(chatDiv); //appends the new chatDiv to the contianer
-            chatInput.value = ""; //clears the chat input
-            chatContainer.scrollTop = chatContainer.scrollHeight; //scrolls to the bottom of the page
+            headers: {
+                Accept: "application/json",
+            },
         });
-        postJoke(); //calls the function to trigger the whole process
-        setInterval(postJoke, 10000); //executes the code every 10 seconds
-        const getPerfectTime = (time = new Date()) => {
-            const minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
-            const hours = (time.getHours() < 10 ? "0" : "") + time.getHours();
-            const seconds = (time.getSeconds() < 10 ? "0" : "") + time.getSeconds();
-            return hours + ":" + minutes + ":" + seconds;
-            const jokeObj = yield jokeData.json();
-            return jokeObj;
-        };
-        if (chatForm && chatInput) {
-            chatForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-                if (!chatInput)
-                    return 0;
-                const chatText = chatInput.value;
-                if (!chatText)
-                    return 0;
-                const chatDiv = document.createElement("div");
-                chatDiv.classList.add("chat_right");
-                chatDiv.innerHTML = `<p>${chatText}</p>`;
-                if (!chatContainer)
-                    return 0;
-                chatContainer.appendChild(chatDiv);
-                chatInput.value = "";
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-                const time = new Date();
-                chatDiv.innerHTML += `<div class="time_left"><p>${getPerfectTime()}</p></div>
+        const jokeData = yield jokeResponse.json(); //parsing the response into a json format
+        return jokeData; // returns the processed data
+    });
+}
+getJoke();
+//declares a asynchronous function
+const postJoke = () => __awaiter(void 0, void 0, void 0, function* () {
+    if (!chatInput)
+        return 0; // if chat input is null or undefined returns 0 preventing further execution
+    const chatDiv = document.createElement("div"); //creates new chat bubble
+    chatDiv.classList.add("chat_left"); // assigns class to the chat
+    const jokeObject = yield getJoke(); //variable stores result from the getJoke function
+    const chatText = jokeObject.joke; //extracting the joke text
+    chatDiv.innerHTML = `<p>${chatText} </p>`; //sets the content of chatdiv with joke text
+    if (!chatContainer)
+        return 0;
+    chatContainer.appendChild(chatDiv); //appends the new chatDiv to the contianer
+    chatInput.value = ""; //clears the chat input
+    chatContainer.scrollTop = chatContainer.scrollHeight; //scrolls to the bottom of the page
+});
+postJoke(); //calls the function to trigger the whole process
+setInterval(postJoke, 10000); //executes the code every 10 seconds
+const getPerfectTime = (time = new Date()) => {
+    const minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
+    const hours = (time.getHours() < 10 ? "0" : "") + time.getHours();
+    const seconds = (time.getSeconds() < 10 ? "0" : "") + time.getSeconds();
+    return hours + ":" + minutes + ":" + seconds;
+};
+if (chatForm && chatInput) {
+    chatForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!chatInput)
+            return 0;
+        const chatText = chatInput.value;
+        if (!chatText)
+            return 0;
+        const chatDiv = document.createElement("div");
+        chatDiv.classList.add("chat_right");
+        chatDiv.innerHTML = `<p>${chatText}</p>`;
+        if (!chatContainer)
+            return 0;
+        chatContainer.appendChild(chatDiv);
+        chatInput.value = "";
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+        const time = new Date();
+        chatDiv.innerHTML += `<div class="time_left"><p>${getPerfectTime()}</p></div>
 `;
-            });
-        }
-        const postJoke = () => __awaiter(this, void 0, void 0, function* () {
-            if (!chatInput)
-                return 0;
-            const chatDiv = document.createElement("div");
-            chatDiv.classList.add("chat_left");
-            const jokeObject = yield getJoke();
-            const chatText = jokeObject.joke;
-            chatDiv.innerHTML = `<p>${chatText}</p>`;
-            if (!chatContainer)
-                return 0;
-            chatContainer.appendChild(chatDiv);
-            chatInput.value = "";
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-        });
-        postJoke();
-        setInterval(postJoke, 15000);
-        const getPerfectTime = (time = new Date()) => {
-            const minutes = (time.getMinutes() < 10 ? "0" : "") + time.getMinutes();
-            const seconds = (time.getSeconds() < 10 ? "0" : "") + time.getSeconds();
-            const hours = (time.getHours() < 10 ? "0" : "") + time.getHours();
-            return hours + ":" + minutes + ":" + seconds;
-        };
-        console.log(getPerfectTime());
     });
 }
