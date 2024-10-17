@@ -2,7 +2,7 @@
 const newscontainer = document.getElementById("favorites-container");
 const events = JSON.parse(localStorage.getItem("events") || "");
 const unfavorite = (star) => {
-    star.src = "./img/star icon.svg";
+    star.src = "/img/Icons/star icon.svg";
     star.alt = "click to favorite";
     showFavorite();
 };
