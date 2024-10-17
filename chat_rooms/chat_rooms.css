@@ -1,7 +1,7 @@
 /* adds background image */
 body {
   background-attachment: fixed;
-  background-image: url("../img/Background/background3.svg");
+  background-image: url("./img/Background/background3.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
