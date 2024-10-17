@@ -15,11 +15,11 @@
         var _a, _b;
         star.addEventListener("click", () => {
             if (star.alt === "click to favorite") {
-                star.src = "/img/Icons/full star icon.svg";
+                star.src = "../img/Icons/full star icon.svg";
                 star.alt = "favorited item";
             }
             else if (star.alt === "favorited item") {
-                star.src = "/img/Icons/star icon.svg";
+                star.src = "../img/Icons/star icon.svg";
                 star.alt = "click to favorite";
             }
             changeLocalStorage();

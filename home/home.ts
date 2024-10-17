@@ -1,7 +1,7 @@
 const newscontainer = document.getElementById("favorites-container")
 const events = JSON.parse(localStorage.getItem("events")||"")
 const unfavorite= (star:HTMLImageElement)=>{
-    star.src="/img/Icons/star icon.svg";
+    star.src="../img/Icons/star icon.svg";
     star.alt="click to favorite";
     showFavorite()
 }
